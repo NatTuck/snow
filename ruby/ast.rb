@@ -58,6 +58,11 @@ class SCall
     @name = name
     @args = args
   end
+
+  def generate
+    args = args.map {|aa| aa.generate }
+    Call.new(name, args)
+  end
 end
 
 class SMod

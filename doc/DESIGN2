@@ -16,6 +16,9 @@ Structs are immutable values. This means a couple things:
  - We can select between copy / rc-ref at compile time based
    on the size of the object.
 
+We can use struct directly as "stack frames". This makes a
+"spaghetti stack" or singly linked list of frames.
+
 
 Random ideas:
  - Can use tests to pre-specialize code.
