@@ -1,0 +1,3 @@
+#!/usr/bin/env snow
+
+(puts "Hello, World")

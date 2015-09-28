@@ -1,0 +1,27 @@
+
+
+Snow is a simple programming language intended for testing
+garbage collection and concurrency ideas.
+
+It'll be initially interpreted, but may later include
+a specializing jit-to-C++ compiler.
+
+General Flow:
+~~~~~~~~~~~~
+ 1. Source (s-exps)
+ 2. AST
+ 3. ???
+ 4. Profit
+
+ 
+
+Design Points:
+~~~~~~~~~~~~~
+
+- We're a HASP, based on replacable (versioned) persistent maps.
+- We use prototype-based OO, JavaScript style namespacing, and
+  io / ruby style names.
+
+Name lookup:
+ - Lexical
+ - Parents

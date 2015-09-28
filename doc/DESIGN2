@@ -1,0 +1,21 @@
+
+
+The basic concept is the struct.
+
+A struct is made up of:
+    - Primitives
+      - int, double, etc.
+      - "references"
+      - "external references"
+    - Other Structs
+
+Structs are immutable values. This means a couple things:
+ - The user can't tell if we pass-by-copy, pass by reference,
+   or pass by refcounted reference.
+ - Refcounted data structures are cycle free.
+ - We can select between copy / rc-ref at compile time based
+   on the size of the object.
+
+
+Random ideas:
+ - Can use tests to pre-specialize code.

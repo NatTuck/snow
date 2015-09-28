@@ -1,0 +1,6 @@
+
+
+(defn (add1 x)
+    (+ x 1))
+
+(puts (add1 5))
